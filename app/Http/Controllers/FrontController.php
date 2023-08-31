@@ -46,6 +46,17 @@ class FrontController extends Controller
             ->with('comments', $comments);
     }
 
+
+
+public function examen()
+[
+
+    return view('examen');
+]
+
+
+
+
     public function jobs()
     {
         $jobs = Job::where('status', true)->orderBy('created_at', 'asc')->paginate(10);
