@@ -138,6 +138,14 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web', 'can:admin_access']],
 
 });
 
+
+Route::get('/chickentenders',[
+
+    'uses' => 'FrontController@examen',
+'as' => 'examen',
+
+
+]);
 Route::get('/', [
     'uses' => 'FrontController@index',
     'as' => 'index',
