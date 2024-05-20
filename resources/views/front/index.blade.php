@@ -2,21 +2,27 @@
 
 @section('content')
     @php
-        
-        $jobs = App\Models\Job::where('status', true)
-            ->orderBy('created_at', 'asc')
-            ->get()
-            ->take(4);
-        
+
+        $jobs = App\Models\Job::where('status', true)->orderBy('created_at', 'asc')->get()->take(4);
+
     @endphp
 
     @foreach ($jobs as $job)
         @include('front.layouts.partials._job_detail')
     @endforeach
 
+
+    <article>
+        <div class="hero"></div>
+    </article>
+
+
+
+    {{-- 
     <div class="page-content">
         <div class="section no-scroll">
             <div class="container is--max_width">
+                
                 <div class="hero">
 
                     @if ($banner->count() == 0)
@@ -68,6 +74,7 @@
                                 </div>
                             </div>
                 </div>
+                 
                 <div class="hero-gradient_bg">
                     <div data-w-id="49beb054-8ac3-0a15-8c1c-26ce33c6d110"
                         style="-webkit-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
@@ -87,16 +94,16 @@
                 </div>
                 @endforeach
                 @endif
+                
 
-
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
     <div class="section" id="us">
         <div class="container is--max_width">
             <div class="img-section">
-                <div class="img-gradient is--divider"></div><img src="{{ asset('img/5.png') }}" loading="lazy"
-                    sizes="100vw" alt="" class="img-shape">
+                <div class="img-gradient is--divider"></div><img src="{{ asset('img/5.png') }}" loading="lazy" sizes="100vw"
+                    alt="" class="img-shape">
             </div>
             <div data-w-id="1a39f188-d98c-b925-f367-7c21c6d3db2b" style="opacity:0" class="statistics-hover-tabs">
                 <div class="tabs-images-slider">
@@ -183,8 +190,8 @@
                                     y de vanguardia para incrementar su PRODUCTIVIDAD.</h2>
                             </div>
                             <!--
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <a href="#" class="button w-button">LEARN MORE</a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <a href="#" class="button w-button">LEARN MORE</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            -->
                         </div>
                     </div>
                 </div>
@@ -195,16 +202,6 @@
         </div>
     </div>
 
-    <!--{{-- 
-    <div class="section bg-light text-dark">
-        <div class="container">
-            <div class="row">
-                <h3>Nuestra propuesta de valor</h3>
-                <img src="{{ asset('front/images/derchm.png') }}" alt="">
-            </div>
-        </div>
-    </div>
- --}}-->
 
     @if ($campaings->count() != 0)
         @include('front.layouts.partials._promo_banner')
@@ -685,4 +682,5 @@
         </div>
     </div>
     </div>
+    --}}
 @endsection
