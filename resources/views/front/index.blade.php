@@ -12,11 +12,57 @@
     @endforeach
 
 
-    <article>
-        <div class="hero"></div>
-    </article>
 
+    <section class="hero">
+        <div class="video-w">
+            <div class="overlay"></div>
+            <video autoplay="true" muted="true" loop src="{{ asset('front/images/hero.webm') }}"></video>
+        </div>
+        <div class="content-w">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="title-1">Transformamos el Talento</h1>
+                            <h1 class="title-2">en Éxito Empresarial Duradero</h1>
+                            <a href="#us" onclick="lenis.scrollTo('#us')">
+                                Leer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="bottom-info">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="swiper clientsS">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Slide 1</div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 4</div>
+                                    <div class="swiper-slide">Slide 5</div>
+                                    <div class="swiper-slide">Slide 6</div>
+                                    <div class="swiper-slide">Slide 7</div>
+                                    <div class="swiper-slide">Slide 8</div>
+                                    <div class="swiper-slide">Slide 9</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 data-lenis-direction="-1">Hola</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="us">
+
+    </section>
 
     {{-- 
     <div class="page-content">
@@ -683,4 +729,33 @@
     </div>
     </div>
     --}}
+
+    @push('scripts')
+        <script>
+            var swiper = new Swiper(".clientsS", {
+                slidesPerView: 2,
+                spaceBetween: 8,
+                loop: true,
+                autoplay: {
+                    delay: 5500,
+                    disableOnInteraction: true,
+                    reverseDirection: true
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 12,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 16,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 24,
+                    },
+                },
+            });
+        </script>
+    @endpush
 @endsection

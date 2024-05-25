@@ -49,7 +49,7 @@
     }
 </style>
 
-<div id="cookie-notice" class="overlay-cookie show-cookie">
+<div id="cookie-notice" class="overlay-cookie">
     <div class="fragment">
         <div>
             <h5>Este sitio utiliza Cookies</h5>
