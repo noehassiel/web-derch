@@ -19,9 +19,19 @@ let textWrapper2 = document.querySelector('.title-2')
 textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
+
+// Modal Links
+let links = document.querySelectorAll('.menu-modal-links');
+links.forEach(link => {
+
+    link.addEventListener('click', () => {
+        $('#exampleModal').modal('hide');
+    });
+});
+
+
+
 // Intro
-
-
 let tl = gsap.timeline({
     delay: 1.4,
     ease: 'power3.inOut'
@@ -67,7 +77,7 @@ tl.fromTo('.hero .bottom-info', {
 
         lenis.start();
     }
-}, 'syncStart')
+}, 'syncStart');
 
 
 /*Smooth Scroll*/
@@ -75,8 +85,22 @@ const lenis = new Lenis({
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
 })
 
+let nav = document.querySelector('nav');
+let scrolledDown = false;
+
 lenis.on('scroll', (e) => {
     console.log(e)
+
+    // Check if the page has scrolled down at least 40px
+    if (e.scroll > 120 && !scrolledDown) {
+        nav.classList.add('scrolled');
+        scrolledDown = true;
+    } else if (e.scroll <= 120 && scrolledDown) {
+        nav.classList.remove('scrolled');
+        scrolledDown = false;
+    }
+
+
 })
 
 lenis.on('scroll', ScrollTrigger.update)
@@ -86,6 +110,40 @@ gsap.ticker.add((time) => {
 })
 
 gsap.ticker.lagSmoothing(0)
+
+
+gsap.to('.hero', {
+    scrollTrigger: {
+        trigger: ".hero",
+        scrub: true,
+        start: "7% top",
+        end: "+=1000",
+        toggleClass: "border"
+    },
+    scale: 0.95,
+})
+
+
+const section_2 = document.getElementById("servicios");
+let box_items = gsap.utils.toArray(".horizontal__item");
+
+gsap.to(box_items, {
+    xPercent: -100 * (box_items.length - 1),
+    ease: "sine.out",
+    scrollTrigger: {
+        trigger: section_2,
+        pin: true,
+        markers: true,
+        scrub: 3,
+        snap: 1 / (box_items.length - 1),
+        end: "+=" + section_2.offsetWidth
+    }
+});
+
+
+
+/*FOOTER*/
+
 
 /*
 
@@ -120,8 +178,3 @@ window.addEventListener('scroll', () => {
 })
 revealSpans()
 */
-window.addEventListener('resize', function () {
-    "use strict";
-    window.scrollTo(0, 0);
-    window.location.reload();
-});

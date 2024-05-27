@@ -13,7 +13,7 @@
 
 
 
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="video-w">
             <div class="overlay"></div>
             <video autoplay="true" muted="true" loop src="{{ asset('front/images/hero.webm') }}"></video>
@@ -60,9 +60,39 @@
         </div>
     </section>
 
+    <section class="services" id="servicios">
+        <div class="container-fluid">
+            <div class="horizontal__content">
+                <div class="horizontal__item">
+                    <div class="horizontal__num">1</div>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">2</div>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">3</div>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">4</div>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">5</div>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">6</div>
+                </div>
+                <div class="horizontal__item">
+                    <div class="horizontal__num">7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about-us" id="us">
 
     </section>
+
+
 
     {{-- 
     <div class="page-content">

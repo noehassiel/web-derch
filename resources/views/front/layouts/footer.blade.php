@@ -1,4 +1,6 @@
-<div class="footer">
+<footer>
+
+
     <div class="two-col-footer">
         <div class="footer-row">
             <div class="footer-logo"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy" width="75"
@@ -43,8 +45,8 @@
         </div>
     </div>
 
-</div>
 
+</footer>
 @push('scripts')
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();

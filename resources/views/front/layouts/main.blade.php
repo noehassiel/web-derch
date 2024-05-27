@@ -43,8 +43,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <!--Iconos-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
 
 
     <link rel="stylesheet" href="{{ asset('front/css/font-face-aspekta.css') }}">
@@ -64,6 +72,8 @@
     <article class="content">
         @yield('content')
     </article>
+
+    @include('front.layouts.utilities._service_card')
 
     <a href="https://wa.me/524777955167?text=Hola!%20Necesito%20más%20información%20de%20sus%20servicios"
         class="whatsapp-btn" target="black" data-bs-toggle="tooltip" data-bs-title="Chatea con nosotros!">
@@ -88,7 +98,6 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
     <!-- ANIMATIONS JS -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -100,6 +109,19 @@
 
 
     <script src="{{ asset('front/js/derch.js') }}"></script>
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script>
+        window.addEventListener('resize', function() {
+            "use strict";
+            window.scrollTo(0, 0);
+            window.location.reload();
+            lenis.stop();
+        });
+    </script>
 
 </body>
 
