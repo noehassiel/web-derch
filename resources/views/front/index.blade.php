@@ -22,9 +22,19 @@
             <div class="main-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 d-none d-md-block">
                             <h1 class="title-1">Transformamos el Talento</h1>
                             <h1 class="title-2">en Éxito Empresarial Duradero</h1>
+                            <a href="#us" onclick="lenis.scrollTo('#us')">
+                                Leer más
+                            </a>
+                        </div>
+
+                        <div class="col-md-12 d-block d-md-none text-center">
+                            <h1 class="title-1-phone">Transformamos el Talento</h1>
+                            <h1 class="title-2-phone">en Éxito</h1>
+                            <h1 class="title-3-phone">Empresarial</h1>
+                            <h1 class="title-4-phone">Duradero</h1>
                             <a href="#us" onclick="lenis.scrollTo('#us')">
                                 Leer más
                             </a>
@@ -51,7 +61,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-none d-md-block">
                             <h4 data-lenis-direction="-1">Hola</h4>
                         </div>
                     </div>
@@ -60,38 +70,53 @@
         </div>
     </section>
 
-    <section class="services" id="servicios">
-        <div class="container-fluid">
-            <div class="horizontal__content">
-                <div class="horizontal__item">
-                    <div class="horizontal__num">1</div>
+    <section class="about-us" id="us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>Nosotros</p>
                 </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">2</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">3</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">4</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">5</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">6</div>
-                </div>
-                <div class="horizontal__item">
-                    <div class="horizontal__num">7</div>
+                <div class="col-md-9">
+                    <h6>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa sed repudiandae ratione illum
+                        quaerat minus enim aspernatur quas explicabo minima molestias natus deserunt facilis molestiae
+                        nulla, consequatur odit exercitationem!
+                    </h6>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-us" id="us">
+    <section class="us-extra">
+        <div class="container h-100">
+            <div class="row justify-content-between h-100">
+                <div class="col-md-4">
+                    <div class="card px-4 pb-5 pt-4">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptatem tempora laudantium,
+                            ducimus autem aperiam fugiat similique possimus eligendi ab, incidunt dicta, deleniti maiores
+                            fuga iusto enim? Ipsum, explicabo itaque. </p>
+                        <br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus tempore cupiditate totam
+                            aut quia ut deserunt maxime dolore nobis quisquam beatae, nemo nostrum odit atque sunt delectus
+                            temporibus dolores doloribus!</p>
+                    </div>
+                </div>
 
+                <div class="col-md-4 align-self-end">
+                    <div class="card card-img">
+                        <img src="{{ asset('front/images/banner.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-container">
+            <img class="us-extra-bg" src="{{ asset('front/images/back2.jpg') }}" alt="">
+        </div>
     </section>
 
+    @include('front.layouts.partials._services_section')
+
+    @include('front.layouts.partials._spots_section')
 
 
     {{-- 

@@ -18,6 +18,16 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 let textWrapper2 = document.querySelector('.title-2')
 textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+//H1 Titles Phone
+let textWrapperP = document.querySelector('.title-1-phone')
+textWrapperP.innerHTML = textWrapperP.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let textWrapper2P = document.querySelector('.title-2-phone')
+textWrapper2P.innerHTML = textWrapper2P.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let textWrapper3P = document.querySelector('.title-3-phone')
+textWrapper3P.innerHTML = textWrapper3P.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let textWrapper4P = document.querySelector('.title-4-phone')
+textWrapper4P.innerHTML = textWrapper4P.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
 
 
 // Modal Links
@@ -64,6 +74,16 @@ tl.to(".video-w", {
 tl.to('.title-1 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.05' }, 'syncStart')
 tl.to('.title-2 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.03' }, "-=1.2")
 
+
+
+//Responsive
+tl.to('.title-1-phone .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.05' }, 'syncStart')
+tl.to('.title-2-phone .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.03' }, "-=1.2")
+tl.to('.title-3-phone .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.03' }, "-=1.2")
+tl.to('.title-4-phone .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', stagger: '.03' }, "-=1.2")
+
+
+
 tl.fromTo('.hero .bottom-info', {
     ease: "power2.out",
     y: 300,
@@ -85,13 +105,20 @@ const lenis = new Lenis({
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
 })
 
+/*
 let nav = document.querySelector('nav');
+let scrolledDown = false;
+*/
+
+
+let nav = document.querySelector('nav'); // Adjust this selector to match your nav element
+let previousScroll = 0;
 let scrolledDown = false;
 
 lenis.on('scroll', (e) => {
     console.log(e)
 
-    // Check if the page has scrolled down at least 40px
+    /* Check if the page has scrolled down at least 40px
     if (e.scroll > 120 && !scrolledDown) {
         nav.classList.add('scrolled');
         scrolledDown = true;
@@ -99,6 +126,25 @@ lenis.on('scroll', (e) => {
         nav.classList.remove('scrolled');
         scrolledDown = false;
     }
+    */
+
+    let currentScroll = e.scroll;
+
+    if (currentScroll > 40 && currentScroll > previousScroll) {
+        // Scrolling down
+        nav.classList.add('scrolling-down');
+        nav.classList.remove('scrolling-up');
+        scrolledDown = true;
+    } else if (currentScroll > 40 && currentScroll < previousScroll) {
+        // Scrolling up
+        nav.classList.add('scrolling-up');
+        nav.classList.remove('scrolling-down');
+    } else if (currentScroll <= 40) {
+        // When near the top of the page
+        nav.classList.remove('scrolling-down', 'scrolling-up');
+    }
+
+    previousScroll = currentScroll;
 
 
 })
@@ -133,12 +179,71 @@ gsap.to(box_items, {
     scrollTrigger: {
         trigger: section_2,
         pin: true,
-        markers: true,
-        scrub: 3,
+        scrub: 1,
         snap: 1 / (box_items.length - 1),
         end: "+=" + section_2.offsetWidth
     }
 });
+
+// Images parallax
+gsap.utils.toArray('.img-container').forEach(container => {
+    const img = container.querySelector('img');
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: container,
+            scrub: true,
+            pin: false,
+        }
+    });
+
+    tl.fromTo(img, {
+        yPercent: -20,
+        ease: 'none'
+    }, {
+        yPercent: 20,
+        ease: 'none'
+    });
+});
+
+
+/*SERVICIOS*/
+let services = document.querySelectorAll('.service-btn');
+services.forEach(service => {
+
+    service.addEventListener('click', () => {
+        $('.full-card-service').addClass('show');
+
+
+        body.classList.add('no-scroll');
+        nav.classList.add('hide');
+        lenis.stop();
+
+
+        let serviceType = service.getAttribute('data-service');
+        // Selecciona o crea el div que se va a mostrar
+        let div = document.querySelector('#service-wrap');
+
+        // Remueve todas las clases que empiezan con 'service-' para evitar acumulación de clases
+        div.className = div.className.replace(/\bservice-\S+/g, '');
+
+        // Añade la clase correspondiente basada en data-service
+        div.classList.add('service-' + serviceType);
+    });
+
+
+});
+
+$("#service-overlay").on("click", function () {
+    $(".full-card-service").removeClass('show');
+
+    lenis.start();
+
+    $('nav').removeClass('hide');
+    // Enable scroll
+    body.classList.remove('no-scroll');
+});
+
 
 
 

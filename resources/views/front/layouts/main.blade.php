@@ -117,9 +117,11 @@
     <script>
         window.addEventListener('resize', function() {
             "use strict";
-            window.scrollTo(0, 0);
-            window.location.reload();
-            lenis.stop();
+            if (window.innerWidth < 1050) {
+                window.scrollTo(0, 0);
+                window.location.reload();
+                lenis.stop();
+            }
         });
     </script>
 
