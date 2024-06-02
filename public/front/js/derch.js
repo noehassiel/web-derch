@@ -179,7 +179,7 @@ gsap.to(box_items, {
     scrollTrigger: {
         trigger: section_2,
         pin: true,
-        scrub: 1,
+        scrub: 2,
         snap: 1 / (box_items.length - 1),
         end: "+=" + section_2.offsetWidth
     }
@@ -243,7 +243,6 @@ $("#service-overlay").on("click", function () {
     // Enable scroll
     body.classList.remove('no-scroll');
 });
-
 
 
 

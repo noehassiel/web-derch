@@ -7,9 +7,11 @@
 
     @endphp
 
+    {{-- 
     @foreach ($jobs as $job)
         @include('front.layouts.partials._job_detail')
     @endforeach
+     --}}
 
 
 
@@ -49,20 +51,74 @@
                         <div class="col-md-9">
                             <div class="swiper clientsS">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">Slide 1</div>
-                                    <div class="swiper-slide">Slide 2</div>
-                                    <div class="swiper-slide">Slide 3</div>
-                                    <div class="swiper-slide">Slide 4</div>
-                                    <div class="swiper-slide">Slide 5</div>
-                                    <div class="swiper-slide">Slide 6</div>
-                                    <div class="swiper-slide">Slide 7</div>
-                                    <div class="swiper-slide">Slide 8</div>
-                                    <div class="swiper-slide">Slide 9</div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="client-item">
+                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
+                                                style="width: 50%">
+                                            <p>10 hours saved</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 d-none d-md-block">
-                            <h4 data-lenis-direction="-1">Hola</h4>
+                            <h5 class="animated-text" id="clientInfo">Hola</h5>
                         </div>
                     </div>
                 </div>
@@ -71,17 +127,56 @@
     </section>
 
     <section class="about-us" id="us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <p>Nosotros</p>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <h3>Nosotros</h3>
                 </div>
-                <div class="col-md-9">
-                    <h6>
+                <div class="col-md-8">
+                    <h5>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa sed repudiandae ratione illum
                         quaerat minus enim aspernatur quas explicabo minima molestias natus deserunt facilis molestiae
                         nulla, consequatur odit exercitationem!
-                    </h6>
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stat-title">
+                        <div class="stat-wrapper">
+                            <div class="stat-heading">+ 18 años</div>
+                            <div class="stat-heading">Experiencia</div>
+                        </div>
+                    </div>
+                    <p class="paragraph-large">Somos una firma con PASIÓN por RRHH. Nos especializamos en Diagnóstico,
+                        Estrategias y Soluciones en temas de Capital Humano. Analizamos, perseguimos y superamos
+                        objetivos.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-title">
+                        <div class="stat-wrapper">
+                            <div class="stat-heading">+ 350</div>
+                            <div class="stat-heading">Colaboraciones</div>
+                        </div>
+                    </div>
+                    <p class="paragraph-large">Brindamos herramientas efectivas y de vanguardia para cimentar bases de
+                        éxito en gestión Comercial y de RH.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-title">
+                        <div class="stat-wrapper">
+                            <div class="stat-heading">+ 900</div>
+                            <div class="stat-heading">Personas</div>
+                        </div>
+                    </div>
+                    <ul style="list-style: none;">
+                        <li>
+                            <p class="paragraph-large">+ 400 personas capacitadas.</p>
+                        </li>
+                        <li>
+                            <p class="paragraph-large">+ 500 personas colocadas en nuevos empleos.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -116,7 +211,36 @@
 
     @include('front.layouts.partials._services_section')
 
-    @include('front.layouts.partials._spots_section')
+
+
+    <section class="vacantes" id="vacantes">
+        <div class="container-fluid text-white header-section">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <h3 class="mb-4">Titulo de sección</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat, doloremque, quibusdam
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center">
+                    <h5 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat,
+                        doloremque, quibusdam
+                    </h5>
+                    <div class="d-flex gap-8">
+                        <a href="" class="btn btn-primary">Contactanos</a>
+                        <a href="" class="btn btn-primary">Agenda una cita</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid vacantes-card">
+            <div class="card">
+                @include('front.layouts.partials._spots_section')
+            </div>
+        </div>
+    </section>
+
+
+    <section id="feedback" class="feedback"></section>
 
 
     {{-- 
@@ -787,14 +911,27 @@
 
     @push('scripts')
         <script>
+            var texts = [
+                "Text for 1st Slide",
+                "Text for 2nd Slide",
+                "Text for 3rd Slide",
+                "Text for 4th Slide",
+                "Text for 5th Slide",
+                "Text for 6th Slide",
+                "Text for 7th Slide",
+                "Text for 8th Slide",
+                "Text for 9th Slide"
+            ];
+
+
             var swiper = new Swiper(".clientsS", {
                 slidesPerView: 2,
                 spaceBetween: 8,
                 loop: true,
                 autoplay: {
-                    delay: 5500,
-                    disableOnInteraction: true,
-                    reverseDirection: true
+                    delay: 6000,
+                    disableOnInteraction: false,
+                    reverseDirection: true,
                 },
                 breakpoints: {
                     640: {
@@ -810,6 +947,18 @@
                         spaceBetween: 24,
                     },
                 },
+                on: {
+                    slideChange: function() {
+                        var activeIndex = this.realIndex; // Get the real index of the active slide
+                        var h4Element = document.querySelector('#clientInfo');
+
+                        // Change the text based on the active slide index
+                        h4Element.textContent = texts[activeIndex] || 'Default Text';
+
+                        // Trigger reflow to restart animation
+                        void h4Element.offsetWidth;
+                    }
+                }
             });
         </script>
     @endpush

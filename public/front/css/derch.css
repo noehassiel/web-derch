@@ -28,6 +28,7 @@
 html.lenis,
 html.lenis body {
   height: auto;
+  background: var(--white);
 }
 
 .lenis.lenis-smooth {
@@ -86,6 +87,7 @@ h2 {
 h3 {
   font-size: 81px;
   font-family: var(--primary-font);
+  line-height: .7;
 }
 
 h4 {
@@ -95,7 +97,7 @@ h4 {
 }
 
 h5 {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 400;
 }
 
@@ -181,12 +183,12 @@ nav.scrolled {
 */
 
 nav.scrolling-down {
-  background-color: rgb(255, 255, 255);
+  background: hsla(0, 0%, 100%, .7);
   transform: translateY(-100%);
 }
 
 nav.scrolling-up {
-  background-color: rgb(255, 255, 255);
+  background: hsla(0, 0%, 100%, .7);
   transform: translateY(0);
 }
 
@@ -293,6 +295,15 @@ nav.hide {
   transform: translateY(-50%);
 }
 
+.client-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+
 .bottom-info {
   border-top: 1px solid var(--white);
   padding-bottom: 1.5rem;
@@ -303,6 +314,15 @@ nav.hide {
   left: 0;
   right: 0;
   position: absolute;
+}
+
+.bottom-info .container-fluid,
+.bottom-info .container-fluid .row {
+  height: 100%;
+}
+
+.bottom-info .clientsS {
+  height: 100%;
 }
 
 @media (max-width:64em) {
@@ -387,7 +407,7 @@ nav.hide {
   aspect-ratio: 1.46 !important;
   margin-left: 90px !important;
   padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-right: 120px !important;
   border-radius: calc(16px + 16*(100vw - 576px) / 1024);
   padding: calc(24px + 8*(100vw - 576px) / 1024);
   max-width: 32.5625vw !important;
@@ -438,13 +458,19 @@ nav.hide {
 .horizontal__item a .content-card {
   position: absolute;
   z-index: 2;
-  top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.48);
-  height: 100%;
   width: 100%;
+  height: 100%;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.horizontal__item a .content-card h3 {
+  font-size: 4rem;
 }
 
 .horizontal__item a:hover {
@@ -499,6 +525,57 @@ nav.hide {
   opacity: 1;
   transition: all .4s ease-in-out;
 }
+
+
+/*SPOTS*/
+#vacantes {
+  background-color: var(--dark-blue);
+}
+
+.vacantes .header-section {
+  padding: 80px 5vw 105px;
+}
+
+.vacantes .vacantes-card .card {
+  margin-top: -120px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 24px;
+  padding-bottom: 120px;
+  position: relative;
+  bottom: -120px;
+  border-radius: 16px;
+}
+
+.vacantes .col-md-12 {
+  height: 400px;
+}
+
+.jobsBtns {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  gap: 40px;
+  height: 50px;
+}
+
+.jobsBtns .swiper-button-next,
+.jobsBtns .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+/*FEEDBACK*/
+.feedback {
+  padding-top: 230px;
+  padding-bottom: 95px;
+  overflow: hidden;
+}
+
 
 /*FOOTER*/
 footer {
