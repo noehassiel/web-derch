@@ -1,6 +1,7 @@
 // body element
 const body = document.body;
 
+
 // .content element
 const contentEl = document.querySelector('.content');
 
@@ -94,6 +95,10 @@ tl.fromTo('.hero .bottom-info', {
         body.classList.remove('content--hidden');
         // Enable scroll
         body.classList.remove('no-scroll');
+
+        $('nav').removeClass('hide');
+
+        $('#cta').css('opacity', '1');
 
         lenis.start();
     }
@@ -234,6 +239,9 @@ services.forEach(service => {
 
 });
 
+
+
+
 $("#service-overlay").on("click", function () {
     $(".full-card-service").removeClass('show');
 
@@ -244,6 +252,16 @@ $("#service-overlay").on("click", function () {
     body.classList.remove('no-scroll');
 });
 
+
+$("#close-service").on("click", function () {
+    $(".full-card-service").removeClass('show');
+
+    lenis.start();
+
+    $('nav').removeClass('hide');
+    // Enable scroll
+    body.classList.remove('no-scroll');
+});
 
 
 /*FOOTER*/

@@ -36,7 +36,7 @@ class FrontController extends Controller
 
         $banner = Banner::where('is_active', true)->orderBy('updated_at', 'asc')->get()->take(1);
 
-        $campaings = Campaing::where('status', true)->get()->take(6);
+        $campaings = Campaing::where('status', true)->get()->take(9);
 
         $comments = Comment::get()->take(4);
 

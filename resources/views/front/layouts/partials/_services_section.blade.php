@@ -10,7 +10,7 @@
             </div>
 
             <div class="horizontal__item">
-                <a href="javascript:void(0)" class="service-btn" data-service="test1">
+                <a href="javascript:void(0)" class="service-btn" data-service="recluta">
                     <img src="{{ asset('front/images/banner.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Reclutamiento</h3>
@@ -18,7 +18,7 @@
                 </a>
             </div>
             <div class="horizontal__item">
-                <a href="javascript:void(0)" class="service-btn" data-service="test2">
+                <a href="javascript:void(0)" class="service-btn" data-service="admin">
                     <img src="{{ asset('front/images/banner.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Administración de nóminas</h3>
@@ -26,7 +26,7 @@
                 </a>
             </div>
             <div class="horizontal__item">
-                <a href="javascript:void(0)" class="service-btn" data-service="test3">
+                <a href="javascript:void(0)" class="service-btn" data-service="consult">
                     <img src="{{ asset('front/images/banner.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Consultoría</h3>
@@ -34,7 +34,7 @@
                 </a>
             </div>
             <div class="horizontal__item">
-                <a href="javascript:void(0)" class="service-btn" data-service="test4">
+                <a href="javascript:void(0)" class="service-btn" data-service="capa">
                     <img src="{{ asset('front/images/banner.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Capacitación</h3>
@@ -42,7 +42,7 @@
                 </a>
             </div>
             <div class="horizontal__item">
-                <a href="javascript:void(0)" class="service-btn" data-service="test5">
+                <a href="javascript:void(0)" class="service-btn" data-service="ident">
                     <img src="{{ asset('front/images/banner.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Identidad corporativa</h3>
@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="horizontal__item">
-                <a href="javascript:void(0)" class="service-btn" data-service="test6">
+                <a href="javascript:void(0)" class="service-btn" data-service="web">
                     <img src="{{ asset('front/images/banner.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Diseño de sitios y aplicaciones web</h3>

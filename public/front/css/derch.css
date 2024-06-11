@@ -62,6 +62,12 @@ html.lenis body {
 
 
 /*COMPONENTS*/
+article {
+  position: relative;
+  z-index: 2;
+  background-color: var(--white);
+}
+
 body {
   font-family: var(--secondary-font);
   font-weight: 500;
@@ -80,7 +86,7 @@ h2 {
 
 @media (max-width:1650px) {
   h2 {
-    font-size: 100px;
+    font-size: 74px;
   }
 }
 
@@ -88,6 +94,21 @@ h3 {
   font-size: 81px;
   font-family: var(--primary-font);
   line-height: .7;
+}
+
+@media (max-width:64em) {
+  h3 {
+    margin-bottom: 32px;
+  }
+}
+
+.stat-heading {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.stat-title {
+  margin-bottom: 24px;
 }
 
 h4 {
@@ -108,7 +129,7 @@ h6 {
 p {
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: -.02rem;
+  letter-spacing: -.01rem;
 }
 
 .gap-2 {
@@ -194,6 +215,7 @@ nav.scrolling-up {
 
 nav.hide {
   top: -100%;
+  transition: all .5s ease;
 }
 
 
@@ -492,6 +514,10 @@ nav.hide {
   }
 }
 
+#service-wrap h3 {
+  font-size: 4.1rem;
+}
+
 .full-card-service {
   position: fixed;
   left: 0;
@@ -504,7 +530,7 @@ nav.hide {
 }
 
 .service-wrapper-view {
-  height: 90svh;
+  height: 95svh;
   width: 100vw;
   background-color: var(--black);
   color: var(--white);
@@ -526,6 +552,54 @@ nav.hide {
   transition: all .4s ease-in-out;
 }
 
+.recluta-content,
+.admin-content,
+.consult-content,
+.capa-content,
+.ident-content,
+.web-content {
+  display: none;
+}
+
+#service-wrap.service-recluta .recluta-content {
+  display: flex;
+}
+
+#service-wrap.service-admin .admin-content {
+  display: flex;
+}
+
+#service-wrap.service-consult .consult-content {
+  display: flex;
+}
+
+#service-wrap.service-capa .capa-content {
+  display: flex;
+}
+
+#service-wrap.service-ident .ident-content {
+  display: flex;
+}
+
+#service-wrap.service-web .web-content {
+  display: flex;
+}
+
+.service-wrapper-view .col-md-5 {
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+}
+
+.service-wrapper-view .col-md-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*SPOTS*/
 #vacantes {
@@ -569,6 +643,13 @@ nav.hide {
   position: relative;
 }
 
+@media (max-width: 64em) {
+  .vacantes .vacantes-card .card {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 /*FEEDBACK*/
 .feedback {
   padding-top: 230px;
@@ -578,8 +659,37 @@ nav.hide {
 
 
 /*FOOTER*/
-footer {
-  background-color: var(--secondary-blue);
-  color: var(--white);
+.pre-cta {
+  margin-bottom: -8rem;
+  position: relative;
+  z-index: 3;
+}
 
+
+footer {
+  position: relative;
+  padding-bottom: 170px;
+  background-color: var(--white);
+}
+
+.first-footer {
+  background-color: #465c58;
+  color: var(--white);
+  z-index: 1;
+  border-radius: 3rem;
+  padding-top: 12rem;
+}
+
+.last-footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  position: fixed;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  color: var(--dark-blue);
 }

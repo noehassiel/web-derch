@@ -1,4 +1,4 @@
-<nav>
+<nav class="hide">
     <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
         <a href="{{ route('index') }}" class="nav-logo">
             <img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy" width="100px" alt="" class="logo"
@@ -36,7 +36,7 @@
                         <i data-feather="external-link"></i>
                     </a>
 
-                    <a href="#vacantes" onclick="lenis.scrollTo('#vacante')" class="menu-modal-links ">Vacantes
+                    <a href="#vacantes" onclick="lenis.scrollTo('#vacantes')" class="menu-modal-links ">Vacantes
                         <i data-feather="external-link"></i>
                     </a>
 

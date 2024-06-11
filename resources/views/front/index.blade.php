@@ -27,7 +27,7 @@
                         <div class="col-md-12 d-none d-md-block">
                             <h1 class="title-1">Transformamos el Talento</h1>
                             <h1 class="title-2">en Éxito Empresarial Duradero</h1>
-                            <a href="#us" onclick="lenis.scrollTo('#us')">
+                            <a href="#us" id="cta" style="opacity: 0" onclick="lenis.scrollTo('#us')">
                                 Leer más
                             </a>
                         </div>
@@ -51,6 +51,18 @@
                         <div class="col-md-9">
                             <div class="swiper clientsS">
                                 <div class="swiper-wrapper">
+
+                                    @foreach ($campaings as $campaing)
+                                        <div class="swiper-slide">
+                                            <div class="client-item">
+                                                <img src="{{ asset('img/campaings/' . $campaing->image) }}" alt=""
+                                                    style="height: 60px; aspect-ratio: 1/1">
+                                                <p>{{ $campaing->name }}</p>
+                                            </div>
+                                        </div>
+                                    @endforeach
+
+                                    {{-- 
                                     <div class="swiper-slide">
                                         <div class="client-item">
                                             <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
@@ -114,11 +126,13 @@
                                             <p>10 hours saved</p>
                                         </div>
                                     </div>
+
+                                     --}}
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-none d-md-block">
-                            <h5 class="animated-text" id="clientInfo">Hola</h5>
+                        <div class="col-md-3 d-none d-md-flex flex-column justify-content-center">
+                            <p class="animated-text" id="clientInfo">Hola</p>
                         </div>
                     </div>
                 </div>
@@ -169,7 +183,7 @@
                             <div class="stat-heading">Personas</div>
                         </div>
                     </div>
-                    <ul style="list-style: none;">
+                    <ul style="list-style: none;" class="ms-0 ps-0">
                         <li>
                             <p class="paragraph-large">+ 400 personas capacitadas.</p>
                         </li>
@@ -187,13 +201,13 @@
             <div class="row justify-content-between h-100">
                 <div class="col-md-4">
                     <div class="card px-4 pb-5 pt-4">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptatem tempora laudantium,
-                            ducimus autem aperiam fugiat similique possimus eligendi ab, incidunt dicta, deleniti maiores
-                            fuga iusto enim? Ipsum, explicabo itaque. </p>
+                        <strong style="color: var(--dark-blue)">*</strong>
+                        <p>Nuestra pasión se basa en la dedicación. Pero una vez que nos comprometemos con algo, impulsamos
+                            nuestro trabajo con la energía que proviene de creer verdaderamente en su potencial.</p>
                         <br>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus tempore cupiditate totam
-                            aut quia ut deserunt maxime dolore nobis quisquam beatae, nemo nostrum odit atque sunt delectus
-                            temporibus dolores doloribus!</p>
+                        <p>Desde nuestro primer proyecto en recursos humanos, siempre hemos tenido un espíritu pionero.
+                            Abordamos cada iniciativa con la determinación de sobresalir y ejecutar a un nivel superior, más
+                            allá de lo común. Porque así es como lo hacemos en Derch.</p>
                     </div>
                 </div>
 
@@ -912,15 +926,9 @@
     @push('scripts')
         <script>
             var texts = [
-                "Text for 1st Slide",
-                "Text for 2nd Slide",
-                "Text for 3rd Slide",
-                "Text for 4th Slide",
-                "Text for 5th Slide",
-                "Text for 6th Slide",
-                "Text for 7th Slide",
-                "Text for 8th Slide",
-                "Text for 9th Slide"
+                @foreach ($campaings as $campaign)
+                    "{{ $campaign->description }}",
+                @endforeach
             ];
 
 
@@ -939,7 +947,7 @@
                         spaceBetween: 12,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 16,
                     },
                     1024: {
