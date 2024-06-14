@@ -62,72 +62,6 @@
                                         </div>
                                     @endforeach
 
-                                    {{-- 
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="client-item">
-                                            <img src="{{ asset('front/images/clauger-white.png') }}" alt=""
-                                                style="width: 50%">
-                                            <p>10 hours saved</p>
-                                        </div>
-                                    </div>
-
-                                     --}}
                                 </div>
                             </div>
                         </div>
@@ -254,7 +188,20 @@
     </section>
 
 
-    <section id="feedback" class="feedback"></section>
+    @include('front.layouts.partials._comments_section')
+
+    <section class="marquee-section">
+        <div class="sm-marquee-wrapper gsap-autoAlpha mb-5 mt-2 is-inview">
+            <div class="sm-marquee-line">
+                <span class="sm-marquee-item ">
+                    Pasión, seguridad, actitud de servicio
+                </span>
+                <span class="sm-marquee-item">
+                    Pasión, seguridad, actitud de servicio
+                </span>
+            </div>
+        </div>
+    </section>
 
 
     {{-- 

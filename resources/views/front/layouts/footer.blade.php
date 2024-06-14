@@ -3,8 +3,17 @@
         <div class="card">
             <div class="container">
                 <div class="row">
-                    <h1>hola</h1>
+                    <div class="col-md-5 offset-1">
+                        <h2>Hola</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam eligendi nulla,
+                            laborum laudantium fuga, veritatis, ea distinctio voluptate quidem vitae. Magnam quos atque
+                            autem cum adipisci qui sed impedit.</p>
+                        <a href="">Agenda una cita</a>
+                    </div>
                 </div>
+            </div>
+            <div class="img-container">
+                <img src="{{ asset('img/5.png') }}" alt="logo">
             </div>
         </div>
     </div>
@@ -16,8 +25,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="footer-logo"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy" width="75"
-                            alt="" class="logo is--footer"></div>
+                    <div class="footer-logo"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy"
+                            width="75" alt="" class="logo is--footer"></div>
 
                     <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
 
@@ -69,11 +78,11 @@
     <div class="last-footer">
 
         <div class="container-fluid">
-            <div class="d-flexjustify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
                 <div class="text-block">©Copyright <span id="year"></span> Todos los derechos reservados. </div>
 
                 <small>developed by <a href="https://www.linkedin.com/company/derch-reclutamiento-y-capital-humano/"
-                        class="text-white">NoeHassiel</a></small>
+                        style="color: var(--dark-blue)">NoeHassiel</a></small>
 
             </div>
         </div>

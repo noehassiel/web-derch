@@ -190,6 +190,18 @@ gsap.to(box_items, {
     }
 });
 
+/*MARQUEE*/
+gsap.to(".sm-marquee-line", {
+    scrollTrigger: {
+        trigger: ".marquee-section",
+        scrub: true,
+        start: "top bottom",
+        end: "+800 top",
+        ease: "power2.out",
+    },
+    x: 300,
+})
+
 // Images parallax
 gsap.utils.toArray('.img-container').forEach(container => {
     const img = container.querySelector('img');

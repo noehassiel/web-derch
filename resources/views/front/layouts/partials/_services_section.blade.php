@@ -51,7 +51,7 @@
             </div>
             <div class="horizontal__item">
                 <a href="javascript:void(0)" class="service-btn" data-service="web">
-                    <img src="{{ asset('front/images/banner.jpg') }}" alt="">
+                    <img src="{{ asset('img/web-card.jpg') }}" alt="">
                     <div class="content-card">
                         <h3>Diseño de sitios y aplicaciones web</h3>
                     </div>

@@ -169,6 +169,10 @@ p {
   z-index: 2;
 }
 
+.card {
+  border-radius: 1rem;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -375,7 +379,8 @@ nav.hide {
 
 /*About us*/
 .about-us {
-  margin: 7.5vw 0px;
+  padding-top: 7.5vw;
+  margin-bottom: 7.5vw;
 }
 
 .us-extra {
@@ -657,14 +662,90 @@ nav.hide {
   overflow: hidden;
 }
 
+/*MARQUEE*/
+.marquee-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.sm-marquee-wrapper {
+  margin-top: -100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: -400px;
+}
+
+.sm-marquee-line {
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  will-change: transform;
+  font-family: var(--primary-font);
+  font-size: 8vw;
+  font-weight: 500;
+}
+
+@media (max-width:64em) {
+  .sm-marquee-line {
+    font-size: 3.5rem;
+  }
+
+  .sm-marquee-wrapper {
+    left: -180px;
+  }
+}
+
+.sm-marquee-item {
+  padding: 0;
+  display: inline-block;
+  margin-right: 1rem;
+  color: #2A2A31 !important;
+  letter-spacing: -4px;
+}
+
 
 /*FOOTER*/
 .pre-cta {
-  margin-bottom: -8rem;
+  margin-bottom: -16rem;
   position: relative;
   z-index: 3;
 }
 
+.pre-cta .card {
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0;
+  border: none;
+}
+
+.pre-cta .card .img-container {
+  clip-path: polygon(92.04% 0%, 22.165% 0%, 22.165% 0%, 20.257% 4.675%, 18.053% 10.073%, 15.65% 15.96%, 13.141% 22.104%, 10.622% 28.272%, 8.187% 34.231%, 5.932% 39.749%, 3.952% 44.593%, 2.341% 48.53%, 1.195% 51.327%, 1.195% 51.327%, 0.488% 53.429%, 0.105% 55.426%, 0.001% 57.304%, 0.132% 59.051%, 0.453% 60.653%, 0.922% 62.097%, 1.494% 63.371%, 2.124% 64.462%, 2.77% 65.355%, 3.386% 66.04%, 44.915% 100%, 91.257% 100%, 100% 100%, 100% 0%, 92.04% 0%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: var(--dark-blue);
+  height: 100%;
+  width: 40%;
+}
+
+.pre-cta .card .img-container img {
+  width: 230%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
 
 footer {
   position: relative;
@@ -677,7 +758,8 @@ footer {
   color: var(--white);
   z-index: 1;
   border-radius: 3rem;
-  padding-top: 12rem;
+  padding-top: 20rem;
+  padding-bottom: 6rem;
 }
 
 .last-footer {

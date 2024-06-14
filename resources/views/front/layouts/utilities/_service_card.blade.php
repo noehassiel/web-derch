@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 web-content">
-                <img src="{{ asset('front/images/back2.jpg') }}" alt="">
+                <img src="{{ asset('img/web.jpg') }}" alt="">
             </div>
         </div>
 
