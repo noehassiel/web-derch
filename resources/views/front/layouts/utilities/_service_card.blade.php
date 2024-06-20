@@ -18,9 +18,10 @@
                 </div>
                 <div>
                     <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque nulla neque id ea commodi
-                        incidunt quae, laudantium, nisi repellendus quidem recusandae vero sit odio! Modi velit cumque
-                        dolore laboriosam!</p>
+                    <p>Análisis.
+                        Busqueda Estratégica.
+                        Herramientas.
+                        Proyectos Especiales.</p>
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 recluta-content">
@@ -34,9 +35,8 @@
                 </div>
                 <div>
                     <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque nulla neque id ea commodi
-                        incidunt quae, laudantium, nisi repellendus quidem recusandae vero sit odio! Modi velit cumque
-                        dolore laboriosam!</p>
+                    <p>Payroll
+                        Relaciones laborales</p>
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 admin-content">
@@ -50,9 +50,9 @@
                 </div>
                 <div>
                     <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque nulla neque id ea commodi
-                        incidunt quae, laudantium, nisi repellendus quidem recusandae vero sit odio! Modi velit cumque
-                        dolore laboriosam!</p>
+                    <p>A través de este proceso ayudamos a las organizaciones a comprender su desempeño, buscar áreas
+                        problemáticas, identificar oportunidades y desarrollar un plan de acción para mejorar el
+                        desempeño y productividad.</p>
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 consult-content">
@@ -66,9 +66,10 @@
                 </div>
                 <div>
                     <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque nulla neque id ea commodi
-                        incidunt quae, laudantium, nisi repellendus quidem recusandae vero sit odio! Modi velit cumque
-                        dolore laboriosam!</p>
+                    <p>Capacitación Regulatoria
+                        Capacitación Normativa
+                        Capacitación Especializada
+                        NOM 035</p>
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 capa-content">
@@ -77,14 +78,15 @@
 
             <div class="col-md-6 flex-column text-white justify-content-between ident-content">
                 <div class="d-flex flex-column gap-16">
-                    <h3>Identidad corporativa</h3>
+                    <h3>Gestión de RRHH</h3>
                     <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
                 </div>
                 <div>
-                    <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque nulla neque id ea commodi
-                        incidunt quae, laudantium, nisi repellendus quidem recusandae vero sit odio! Modi velit cumque
-                        dolore laboriosam!</p>
+                    <h6 style="font-weight: 400; font-size:24px">EXTERNALIZACIÓN DE PROCESO DE NEGOCIOS (BPO),
+                        ACOMPAÑAMIENTO & COACHING</h6>
+                    <p>Ambas soluciones son un SERVICIO ESPECIALIZADO. Administramos y gestionamos el proceso integral
+                        de RRHH y vida laboral de cada colaborador. También preparamos y guiamos a tu equipo de RRHH
+                        para administrar, ejecutar, operar y lograr el plan de Acción de RRHH en TU EMPRESA</p>
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 ident-content">

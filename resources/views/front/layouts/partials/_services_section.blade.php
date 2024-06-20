@@ -4,9 +4,10 @@
 
             <div class="horizontal__item section-title">
                 <h3 class="mb-5">Servicios</h3>
-                <h5>En Derch, ofrecemos soluciones integrales en reclutamiento y gestión de talento humano. <br><br> Nos
-                    especializamos en identificar, atraer y desarrollar el talento que tu empresa necesita para alcanzar
-                    sus objetivos. </h5>
+                <h5>En DeRCH, somos tu aliado estratégico en Recursos Humanos y Gestión de Talento. Ofrecemos servicios
+                    de BPO & TMC, Reclutamiento y Selección, Capacitación, Administración del Personal, Consultorías y
+                    Diagnósticos, y Desvinculación (Offboarding). Nos dedicamos a optimizar tu equipo y fortalecer tu
+                    negocio con soluciones integrales y personalizadas.</h5>
             </div>
 
             <div class="horizontal__item">

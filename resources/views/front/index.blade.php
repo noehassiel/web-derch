@@ -25,6 +25,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 d-none d-md-block">
+                            Elevamos tu equipo al éxito estrategias y soluciones efectivas y personalizadas para tu empresa.
                             <h1 class="title-1">Transformamos el Talento</h1>
                             <h1 class="title-2">en Éxito Empresarial Duradero</h1>
                             <a href="#us" id="cta" style="opacity: 0" onclick="lenis.scrollTo('#us')">
@@ -82,9 +83,9 @@
                 </div>
                 <div class="col-md-8">
                     <h5>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa sed repudiandae ratione illum
-                        quaerat minus enim aspernatur quas explicabo minima molestias natus deserunt facilis molestiae
-                        nulla, consequatur odit exercitationem!
+                        ¡Bienvenido a DERCH Servicios Profesionales Especializados! Con casi dos décadas de experiencia,
+                        somos líderes en soluciones integrales de Recursos Humanos y Servicios Corporativos en México y
+                        América Latina.
                     </h5>
                 </div>
             </div>
@@ -136,12 +137,14 @@
                 <div class="col-md-4">
                     <div class="card px-4 pb-5 pt-4">
                         <strong style="color: var(--dark-blue)">*</strong>
-                        <p>Nuestra pasión se basa en la dedicación. Pero una vez que nos comprometemos con algo, impulsamos
-                            nuestro trabajo con la energía que proviene de creer verdaderamente en su potencial.</p>
+                        <p>Visión: Ser referente en Mexico y LATAM en soluciones de Recursos Humanos y Servicios
+                            Corporativos Especializados para Empresas siendo identificados por: Nuestro Profesionalismo y
+                            Calidez; Nuestra Metodología de Trabajo, Actitud de Servicio y Sentido de Urgencia.</p>
                         <br>
-                        <p>Desde nuestro primer proyecto en recursos humanos, siempre hemos tenido un espíritu pionero.
-                            Abordamos cada iniciativa con la determinación de sobresalir y ejecutar a un nivel superior, más
-                            allá de lo común. Porque así es como lo hacemos en Derch.</p>
+                        <p>Misión: En DERCH, nos dedicamos a consolidar el éxito de las empresas mediante el desarrollo
+                            integral del talento de sus colaboradores. Brindamos herramientas precisas y de vanguardia que
+                            incrementan la productividad y permiten a nuestros clientes alcanzar sus metas en un entorno
+                            empresarial dinámico</p>
                     </div>
                 </div>
 
@@ -165,12 +168,14 @@
         <div class="container-fluid text-white header-section">
             <div class="row justify-content-between">
                 <div class="col-md-4">
-                    <h3 class="mb-4">Titulo de sección</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat, doloremque, quibusdam
+                    <h3 class="mb-4">Vacantes</h3>
+                    <p>Explora nuestras oportunidades disponibles y encuentra la posición perfecta para ti. ¡Postúlate hoy!
+                    </p>
                 </div>
                 <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <h5 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat,
-                        doloremque, quibusdam
+                    <h5 class="mb-4">Ayudamos a las empresas a crear ofertas de empleo y atraer el talento ideal para sus
+                        operaciones. Combinamos su visión con nuestra experiencia y metodología innovadora para encontrar a
+                        los mejores candidatos.
                     </h5>
                     <div class="d-flex gap-8">
                         <a href="" class="btn btn-primary">Contactanos</a>
