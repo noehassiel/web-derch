@@ -24,7 +24,7 @@
                         Proyectos Especiales.</p>
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1 recluta-content">
+            <div class="col-md-5 offset-md-1 recluta-content d-none d-md-block">
                 <img src="{{ asset('front/images/back2.jpg') }}" alt="">
             </div>
 
@@ -39,7 +39,7 @@
                         Relaciones laborales</p>
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1 admin-content">
+            <div class="col-md-5 offset-md-1 admin-content d-none d-md-block">
                 <img src="{{ asset('front/images/back2.jpg') }}" alt="">
             </div>
 
@@ -55,7 +55,7 @@
                         desempeño y productividad.</p>
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1 consult-content">
+            <div class="col-md-5 offset-md-1 consult-content d-none d-md-block">
                 <img src="{{ asset('front/images/back2.jpg') }}" alt="">
             </div>
 
@@ -72,7 +72,7 @@
                         NOM 035</p>
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1 capa-content">
+            <div class="col-md-5 offset-md-1 capa-content d-none d-md-block">
                 <img src="{{ asset('front/images/back2.jpg') }}" alt="">
             </div>
 
@@ -89,7 +89,7 @@
                         para administrar, ejecutar, operar y lograr el plan de Acción de RRHH en TU EMPRESA</p>
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1 ident-content">
+            <div class="col-md-5 offset-md-1 ident-content d-none d-md-block">
                 <img src="{{ asset('front/images/back2.jpg') }}" alt="">
             </div>
 
@@ -113,7 +113,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-5 offset-md-1 web-content">
+            <div class="col-md-5 offset-md-1 web-content d-none d-md-block">
                 <img src="{{ asset('img/web.jpg') }}" alt="">
             </div>
         </div>

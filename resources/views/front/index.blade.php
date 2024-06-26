@@ -134,7 +134,7 @@
     <section class="us-extra">
         <div class="container h-100">
             <div class="row justify-content-between h-100">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card px-4 pb-5 pt-4">
                         <strong style="color: var(--dark-blue)">*</strong>
                         <p>Visión: Ser referente en Mexico y LATAM en soluciones de Recursos Humanos y Servicios

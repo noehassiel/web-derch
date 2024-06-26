@@ -251,6 +251,32 @@ services.forEach(service => {
 
 });
 
+let services2 = document.querySelectorAll('.service-btn-mobile');
+services2.forEach(service => {
+
+    service.addEventListener('click', () => {
+        $('.full-card-service').addClass('show');
+
+
+        body.classList.add('no-scroll');
+        nav.classList.add('hide');
+        lenis.stop();
+
+
+        let serviceType = service.getAttribute('data-service');
+        // Selecciona o crea el div que se va a mostrar
+        let div = document.querySelector('#service-wrap');
+
+        // Remueve todas las clases que empiezan con 'service-' para evitar acumulación de clases
+        div.className = div.className.replace(/\bservice-\S+/g, '');
+
+        // Añade la clase correspondiente basada en data-service
+        div.classList.add('service-' + serviceType);
+    });
+
+
+});
+
 
 
 
