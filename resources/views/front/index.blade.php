@@ -150,7 +150,7 @@
 
                 <div class="col-md-4 align-self-end">
                     <div class="card card-img">
-                        <img src="{{ asset('front/images/banner.jpg') }}" alt="">
+                        <img src="{{ asset('front/images/team.jpg') }}" alt="">
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 recluta-content d-none d-md-block">
-                <img src="{{ asset('front/images/back2.jpg') }}" alt="">
+                <img src="{{ asset('front/images/reclutamiento.jpg') }}" alt="">
             </div>
 
             <div class="col-md-6 flex-column text-white justify-content-between admin-content">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 admin-content d-none d-md-block">
-                <img src="{{ asset('front/images/back2.jpg') }}" alt="">
+                <img src="{{ asset('front/images/payroll.jpg') }}" alt="">
             </div>
 
             <div class="col-md-6 flex-column text-white justify-content-between consult-content">
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 consult-content d-none d-md-block">
-                <img src="{{ asset('front/images/back2.jpg') }}" alt="">
+                <img src="{{ asset('front/images/consult.jpg') }}" alt="">
             </div>
 
             <div class="col-md-6 flex-column text-white justify-content-between capa-content">
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 capa-content d-none d-md-block">
-                <img src="{{ asset('front/images/back2.jpg') }}" alt="">
+                <img src="{{ asset('front/images/capacitacion.jpg') }}" alt="">
             </div>
 
             <div class="col-md-6 flex-column text-white justify-content-between ident-content">
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="col-md-5 offset-md-1 ident-content d-none d-md-block">
-                <img src="{{ asset('front/images/back2.jpg') }}" alt="">
+                <img src="{{ asset('front/images/identidad.jpg') }}" alt="">
             </div>
 
             <div class="col-md-6 flex-column text-white justify-content-between web-content">
