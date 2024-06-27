@@ -262,6 +262,7 @@ h3 {
 @media (max-width:64em) {
   h3 {
     margin-bottom: 32px;
+    font-size: 48px;
   }
 }
 
