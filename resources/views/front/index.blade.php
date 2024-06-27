@@ -18,7 +18,8 @@
     <section class="hero" id="inicio">
         <div class="video-w">
             <div class="overlay"></div>
-            <video autoplay="true" muted="true" loop src="{{ asset('front/images/hero.webm') }}"></video>
+            <video autoplay="true" muted="true" webkit-playsinline playsinline disablepictureinpicture loop
+                src="{{ asset('front/images/hero.webm') }}"></video>
         </div>
         <div class="content-w">
             <div class="main-content">
