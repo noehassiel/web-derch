@@ -116,6 +116,7 @@
         feather.replace();
     </script>
 
+    {{-- 
     <script>
         window.addEventListener('resize', function() {
             "use strict";
@@ -126,7 +127,7 @@
             }
         });
     </script>
-
+ --}}
 </body>
 
 </html>
