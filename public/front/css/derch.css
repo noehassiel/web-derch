@@ -590,7 +590,11 @@ nav.hide {
   position: relative;
 }
 
-.us-extra .card-img img {}
+@media (max-width: 64em) {
+  .us-extra {
+    height: auto;
+  }
+}
 
 /*Servicios*/
 #servicios {
