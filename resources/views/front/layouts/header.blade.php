@@ -4,12 +4,13 @@
             <img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy" width="100px" alt="" class="logo"
                 style="width: 11em; margin-top:-11px">
         </a>
-        <div class="nav-links gap-12 d-flex">
-            <a href="#" id="contact-open">
+        <div class="nav-links gap-12 d-flex" style="mix-blend-mode: difference">
+            <a href="#" id="contact-open" class="btn btn-link text-decoration-none text-white">
                 Contacto
             </a>
 
-            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="#" data-bs-toggle="modal" class="btn btn-link text-decoration-none text-white"
+                data-bs-target="#exampleModal">
                 Menu
             </a>
         </div>
