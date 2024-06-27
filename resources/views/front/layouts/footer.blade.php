@@ -3,7 +3,7 @@
         <div class="card">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 offset-1">
+                    <div class="col-md-5 offset-md-1">
                         <h2>Hola</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam eligendi nulla,
                             laborum laudantium fuga, veritatis, ea distinctio voluptate quidem vitae. Magnam quos atque
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="img-container">
+            <div class="img-container d-none d-md-block">
                 <img src="{{ asset('img/5.png') }}" alt="logo">
             </div>
         </div>
@@ -78,10 +78,10 @@
     <div class="last-footer">
 
         <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-14">
                 <div class="text-block">©Copyright <span id="year"></span> Todos los derechos reservados. </div>
 
-                <small>developed by <a href="https://www.linkedin.com/company/derch-reclutamiento-y-capital-humano/"
+                <small>developed by <a href="https://www.linkedin.com/in/noehassiel/"
                         style="color: var(--dark-blue)">NoeHassiel</a></small>
 
             </div>

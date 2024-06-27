@@ -66,6 +66,8 @@
 
     @include('front.layouts.header')
 
+    @include('front.layouts.partials._contact_view')
+
 
     @include('front.layouts.partials._messages')
     @include('front.layouts.partials._modal_messages')

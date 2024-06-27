@@ -302,6 +302,26 @@ $("#close-service").on("click", function () {
 });
 
 
+/*CONTACT*/
+$("#contact-open").on("click", function () {
+    $(".contact-view").addClass('show');
+
+    nav.classList.add('hide');
+    body.classList.add('no-scroll');
+    lenis.stop();
+});
+
+$("#close-contact").on("click", function () {
+    $(".contact-view").removeClass('show');
+
+    lenis.start();
+
+    $('nav').removeClass('hide');
+    // Enable scroll
+    body.classList.remove('no-scroll');
+});
+
+
 /*FOOTER*/
 
 

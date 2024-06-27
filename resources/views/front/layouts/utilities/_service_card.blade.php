@@ -14,13 +14,14 @@
             <div class="col-md-6 flex-column text-white justify-content-between recluta-content">
                 <div class="d-flex flex-column gap-16">
                     <h3>Reclutamiento</h3>
-                    <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
+                    <a style="font-weight: 300" class="text-white"
+                        href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20el%Reclutamiento">Listo
+                        para empezar? Contáctanos</a>
                 </div>
                 <div>
-                    <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Análisis.
-                        Busqueda Estratégica.
-                        Herramientas.
+                    <p>Análisis. <br>
+                        Busqueda Estratégica. <br>
+                        Herramientas. <br>
                         Proyectos Especiales.</p>
                 </div>
             </div>
@@ -31,11 +32,12 @@
             <div class="col-md-6 flex-column text-white justify-content-between admin-content">
                 <div class="d-flex flex-column gap-16">
                     <h3>Administración de nóminas</h3>
-                    <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
+                    <a style="font-weight: 300" class="text-white"
+                        href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%la%20administracion%20de%20nomina">Listo
+                        para empezar? Contáctanos</a>
                 </div>
                 <div>
-                    <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Payroll
+                    <p>Payroll <br>
                         Relaciones laborales</p>
                 </div>
             </div>
@@ -46,10 +48,11 @@
             <div class="col-md-6 flex-column text-white justify-content-between consult-content">
                 <div class="d-flex flex-column gap-16">
                     <h3>Consultoría</h3>
-                    <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
+                    <a style="font-weight: 300" class="text-white"
+                        href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%20consultorias">Listo
+                        para empezar? Contáctanos</a>
                 </div>
                 <div>
-                    <h6 style="font-weight: 400; font-size:24px">Texto</h6>
                     <p>A través de este proceso ayudamos a las organizaciones a comprender su desempeño, buscar áreas
                         problemáticas, identificar oportunidades y desarrollar un plan de acción para mejorar el
                         desempeño y productividad.</p>
@@ -62,13 +65,14 @@
             <div class="col-md-6 flex-column text-white justify-content-between capa-content">
                 <div class="d-flex flex-column gap-16">
                     <h3>Capacitación</h3>
-                    <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
+                    <a style="font-weight: 300" class="text-white"
+                        href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20sus%capacitacione">Listo
+                        para empezar? Contáctanos</a>
                 </div>
                 <div>
-                    <h6 style="font-weight: 400; font-size:24px">Texto</h6>
-                    <p>Capacitación Regulatoria
-                        Capacitación Normativa
-                        Capacitación Especializada
+                    <p>Capacitación Regulatoria <br>
+                        Capacitación Normativa <br>
+                        Capacitación Especializada <br>
                         NOM 035</p>
                 </div>
             </div>
@@ -79,7 +83,9 @@
             <div class="col-md-6 flex-column text-white justify-content-between ident-content">
                 <div class="d-flex flex-column gap-16">
                     <h3>Gestión de RRHH</h3>
-                    <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
+                    <a style="font-weight: 300" class="text-white"
+                        href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20su%20gestion%20de%20RH">Listo
+                        para empezar? Contáctanos</a>
                 </div>
                 <div>
                     <h6 style="font-weight: 400; font-size:24px">EXTERNALIZACIÓN DE PROCESO DE NEGOCIOS (BPO),
@@ -96,7 +102,9 @@
             <div class="col-md-6 flex-column text-white justify-content-between web-content">
                 <div class="d-flex flex-column gap-16">
                     <h3>Diseño de sitios y aplicaciones web</h3>
-                    <a style="font-weight: 300" class="text-white" href="">Listo para empezar? Contáctanos</a>
+                    <a style="font-weight: 300" class="text-white"
+                        href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20web">Listo
+                        para empezar? Contáctanos</a>
                 </div>
                 <div>
                     <h6 style="font-weight: 400; font-size:24px">Transformamos tus ideas en soluciones digitales

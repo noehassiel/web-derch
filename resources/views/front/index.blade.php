@@ -25,10 +25,11 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 d-none d-md-block">
-                            Elevamos tu equipo al éxito estrategias y soluciones efectivas y personalizadas para tu empresa.
+                            {{-- Elevamos tu equipo al éxito estrategias y soluciones efectivas y personalizadas para tu empresa. --}}
                             <h1 class="title-1">Transformamos el Talento</h1>
                             <h1 class="title-2">en Éxito Empresarial Duradero</h1>
-                            <a href="#us" id="cta" style="opacity: 0" onclick="lenis.scrollTo('#us')">
+                            <a href="#us" id="cta" class="btn-derch" style="opacity: 0"
+                                onclick="lenis.scrollTo('#us')">
                                 Leer más
                             </a>
                         </div>
@@ -38,7 +39,7 @@
                             <h1 class="title-2-phone">en Éxito</h1>
                             <h1 class="title-3-phone">Empresarial</h1>
                             <h1 class="title-4-phone">Duradero</h1>
-                            <a href="#us" onclick="lenis.scrollTo('#us')">
+                            <a href="#us" class="btn-derch" onclick="lenis.scrollTo('#us')">
                                 Leer más
                             </a>
                         </div>
@@ -178,8 +179,7 @@
                         los mejores candidatos.
                     </h5>
                     <div class="d-flex gap-8">
-                        <a href="" class="btn btn-primary">Contactanos</a>
-                        <a href="" class="btn btn-primary">Agenda una cita</a>
+                        <a href="" class="btn-derch">Contáctanos</a>
                     </div>
                 </div>
             </div>
@@ -193,7 +193,7 @@
     </section>
 
 
-    @include('front.layouts.partials._comments_section')
+    {{-- @include('front.layouts.partials._comments_section') --}}
 
     <section class="marquee-section">
         <div class="sm-marquee-wrapper gsap-autoAlpha mb-5 mt-2 is-inview">

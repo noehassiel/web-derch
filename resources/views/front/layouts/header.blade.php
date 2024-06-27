@@ -5,9 +5,8 @@
                 style="width: 11em; margin-top:-11px">
         </a>
         <div class="nav-links gap-12 d-flex">
-            <a href="#"
-                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hassielmonterrosas/testing'});return false;">
-                Contacts
+            <a href="#" id="contact-open">
+                Contacto
             </a>
 
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -47,15 +46,18 @@
 
                 <div style="margin-top: 8rem">
                     <h6>Siguenos en</h6>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex modal-social-media align-items-center gap-8">
-                            <a href="">Instagram</a>
-                            <a href="">Facebook</a>
-                            <a href="">LinkedIn</a>
-                        </div>
-                        <a href="#"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hassielmonterrosas/testing'});return false;"
-                            class="btn btn-primary">Agendar una junta</a>
+                    <div class="d-flex flex-wrap gap-8">
+                        <a href="https://www.facebook.com/Reclutamiento.DERCH/" class="social-media-btn">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/derch_reclutamientoch?igshid=YmMyMTA2M2Y="
+                            class="social-media-btn">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/derch-reclutamiento-y-capital-humano/"
+                            class="social-media-btn">
+                            <i data-feather="linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </div>

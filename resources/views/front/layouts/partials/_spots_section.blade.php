@@ -16,11 +16,30 @@
                     @foreach ($jobs as $job)
                         <div class="swiper-slide">
                             <div class="card h-100">
-                                <h3>{{ $job->name }}</h3>
-                                <p>{{ $job->preview }}</p>
-                                <a href="javascript:void(0)" id="job_{{ $job->slug }}"
+                                <h3>{{ $job->name }} </h3>
+                                <h4>{{ $job->company }}</h4>
+
+                                <div>
+                                    <div class="d-flex mb-3">
+                                        <ion-icon class="pt-1 md hydrated" name="briefcase-outline" role="img"
+                                            aria-label="briefcase outline"></ion-icon>
+                                        <p class="mb-0 ms-2">Tipo: {{ $job->type }}</p>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <ion-icon class="pt-1 md hydrated" name="rocket-outline" role="img"
+                                            aria-label="rocket outline"></ion-icon>
+                                        <p class="mb-0 ms-2">Modalidad: {{ $job->modality }}</p>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <ion-icon class="pt-1 md hydrated" name="analytics-outline" role="img"
+                                            aria-label="analytics outline"></ion-icon>
+                                        <p class="mb-0 ms-2">Experiencia: {{ $job->experience }}</p>
+                                    </div>
+                                </div>
+
+                                <a href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20{{ $job->slug }}"
                                     class="button card-detail-b is--ghost left-align w-button">
-                                    Leer <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    Información <ion-icon name="arrow-forward-outline"></ion-icon>
                                 </a>
                             </div>
                         </div>
