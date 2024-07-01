@@ -537,9 +537,10 @@ nav.hide {
 
   .hero h1 {
     letter-spacing: -2px;
-    font-size: 74px;
+    font-size: 62px;
     line-height: 1;
     text-align: center;
+
   }
 
   .hero .title-2-phone,
@@ -1044,6 +1045,8 @@ footer {
   .contact-view .close-btn-contact {
     left: 1.5rem;
   }
+
+
 }
 
 
@@ -1073,4 +1076,24 @@ footer {
   padding: 16px;
   margin-top: 12px;
   margin-bottom: 24px;
+}
+
+
+@media (max-width: 64em) {
+  .contact-view .card {
+    padding: 16px 32px;
+  }
+
+
+  #service-wrap h3 {
+    font-size: 3.1rem;
+  }
+
+  .service-wrapper-view {
+    padding: 20px 2rem;
+  }
+
+  .service-wrapper-view img {
+    display: none;
+  }
 }

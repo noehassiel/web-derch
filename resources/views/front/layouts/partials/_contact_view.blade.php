@@ -16,7 +16,7 @@
 
                         <h5>Hablemos 👋</h5>
 
-                        <div class="grey-pill">
+                        <div class="grey-pill d-none d-md-block">
                             <div class="d-flex">
                                 <div class="row align-items-center justify-content-between">
                                     <div class="col">
@@ -77,8 +77,6 @@
 
 
                             <div class="modal-footer mt-2">
-                                <button type="button" class="btn btn-secondary me-2"
-                                    data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </form>
