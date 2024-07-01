@@ -4,10 +4,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 offset-md-1">
-                        <h2>Hola</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam eligendi nulla,
-                            laborum laudantium fuga, veritatis, ea distinctio voluptate quidem vitae. Magnam quos atque
-                            autem cum adipisci qui sed impedit.</p>
+                        <h3 class="mb-4">Seremos tu guía dedicada</h3>
+                        <p>Atendemos a diversas industrias y empresas de todos los tamaños, nuestro equipo y nuestros
+                            servicios se adaptan de manera eficiente a las necesidades de nuestros clientes. Aplicamos
+                            análisis previos y registros en curso para ofrecer las soluciones más eficientes en términos
+                            de tiempo y recursos.</p>
                         <a href="">Agenda una cita</a>
                     </div>
                 </div>
@@ -24,41 +25,26 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="footer-logo"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy"
-                            width="75" alt="" class="logo is--footer"></div>
+                            width="400" alt="" class="logo is--footer"></div>
 
-                    <div class="d-flex flex-md-row flex-column justify-content-between align-items-center">
-
-
-                        <div class="d-flex align-items-center">
-                            <a href="https://www.facebook.com/Reclutamiento.DERCH/"
-                                class="mx-3 text-white footer-links">
-                                <ion-icon style="font-size: 30px" name="logo-facebook"></ion-icon>
-                            </a>
-                            <a href="https://instagram.com/derch_reclutamientoch?igshid=YmMyMTA2M2Y="
-                                class="mx-3 text-white footer-links">
-                                <ion-icon style="font-size: 30px" name="logo-instagram"></ion-icon>
-                            </a>
-                            <a href="https://www.linkedin.com/company/derch-reclutamiento-y-capital-humano/"
-                                class="mx-3 text-white footer-links">
-                                <ion-icon style="font-size: 30px" name="logo-linkedin"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="footer-links">
-                        <a href="{{ route('index') }}" class="nav-link">Inicio</a>
-                        <a href="{{ route('jobs.all') }}" class="nav-link">Vacantes</a>
-                        <a href="{{ route('legal.text') }}" class="nav-link">Políticas de Privacidad</a>
+                    <div class="d-flex flex-wrap gap-14">
+                        <a href="https://www.facebook.com/Reclutamiento.DERCH/" class="social-media-btn">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/derch_reclutamientoch?igshid=YmMyMTA2M2Y="
+                            class="social-media-btn">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/derch-reclutamiento-y-capital-humano/"
+                            class="social-media-btn">
+                            <i data-feather="linkedin"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-md-12">
-                    <img src="{{ asset('img/marca_gto.png') }}" height="100px" width="auto" class="my-4 my-md-0"
-                        alt="">
-
+                <div class="col-md-6">
                     <div class="ms-0 ms-md-5 mt-4 mt-md-0">
                         <div class="text-center text-md-start">
                             <h6>Teléfono:</h6>
@@ -70,6 +56,8 @@
                                 class="btn btn-link text-white">contacto@derch.com.mx</a>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
