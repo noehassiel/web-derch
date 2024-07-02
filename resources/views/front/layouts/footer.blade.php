@@ -29,7 +29,7 @@
                     <div class="footer-logo mb-5"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy"
                             width="300" alt="" class="logo is--footer"></div>
 
-                    <div class="d-flex flex-wrap gap-14">
+                    <div class="d-flex flex-wrap gap-14 justify-content-center justify-content-md-start">
                         <a href="https://www.facebook.com/Reclutamiento.DERCH/" class="social-media-btn">
                             <i data-feather="facebook"></i>
                         </a>
