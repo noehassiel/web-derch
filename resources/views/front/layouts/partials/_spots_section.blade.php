@@ -37,9 +37,20 @@
                                     </div>
                                 </div>
 
-                                <a href="https://wa.me/524776194874?text=Hola!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20de%20{{ $job->slug }}"
+                                @php
+                                    // Construir el mensaje para WhatsApp
+                                    $message = 'Estoy interesado en el trabajo: ' . $job->name;
+                                    // Codificar el mensaje para URL
+                                    $encodedMessage = urlencode($message);
+                                    // Construir el enlace completo de WhatsApp
+                                    $whatsappLink = 'https://wa.me/?text=' . $encodedMessage;
+                                @endphp
+
+                                <a href="{{ $whatsappLink }}" target="_blank"
                                     class="button card-detail-b is--ghost left-align w-button">
-                                    Información <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    Más información
+
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
                                 </a>
                             </div>
                         </div>
