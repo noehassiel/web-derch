@@ -844,8 +844,8 @@ nav.hide {
 
 .vacantes .vacantes-card .card {
   margin-top: -120px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 24px;
   padding-bottom: 120px;
   position: relative;
@@ -876,8 +876,10 @@ nav.hide {
 }
 
 .jobsS h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 64em) {

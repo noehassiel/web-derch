@@ -1,6 +1,6 @@
 @php
 
-    $jobs = App\Models\Job::where('status', true)->orderBy('created_at', 'asc')->get()->take(6);
+    $jobs = App\Models\Job::where('status', true)->orderBy('created_at', 'asc')->get()->take(12);
 
 @endphp
 
