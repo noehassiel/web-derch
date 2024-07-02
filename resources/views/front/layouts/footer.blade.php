@@ -26,8 +26,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="footer-logo"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy"
-                            width="400" alt="" class="logo is--footer"></div>
+                    <div class="footer-logo mb-5"><img src="{{ asset('img/logo/derch-w.png') }}" loading="lazy"
+                            width="300" alt="" class="logo is--footer"></div>
 
                     <div class="d-flex flex-wrap gap-14">
                         <a href="https://www.facebook.com/Reclutamiento.DERCH/" class="social-media-btn">
