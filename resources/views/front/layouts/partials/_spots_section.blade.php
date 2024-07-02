@@ -17,7 +17,7 @@
                         <div class="swiper-slide">
                             <div class="card h-100">
                                 <h4>{{ $job->name }} </h4>
-                                <h6>{{ $job->company }}</h6>
+                                <p>{{ $job->company }}</p>
 
                                 <div>
                                     <div class="d-flex mb-3">
