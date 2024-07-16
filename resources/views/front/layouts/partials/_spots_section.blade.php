@@ -43,7 +43,7 @@
                                     // Codificar el mensaje para URL
                                     $encodedMessage = urlencode($message);
                                     // Construir el enlace completo de WhatsApp
-                                    $whatsappLink = 'https://wa.me/?text=' . $encodedMessage;
+                                    $whatsappLink = 'https://wa.me/524776194874?text=' . $encodedMessage;
                                 @endphp
 
                                 <a href="{{ $whatsappLink }}" target="_blank"
