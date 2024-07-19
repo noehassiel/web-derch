@@ -153,7 +153,7 @@ class FrontController extends Controller
                 });
 
                 Mail::send('mail.new_user', $data, function ($message) use ($files, $data) {
-                    $message->to('miriam.derch@gmail.com', 'Derch')->subject('Hey! Se han postulado para una vacante');
+                    $message->to('mgutierrez@derch.com.mx', 'Derch')->subject('Hey! Se han postulado para una vacante');
 
                     $message->from('postulaciones.derch@gmail.com', 'Derch');
 
@@ -292,7 +292,7 @@ class FrontController extends Controller
             try {
 
                 Mail::send('mail.new_user', $data, function ($message) use ($data) {
-                    $message->to('miriam.derch@gmail.com', 'Derch')->subject('Hey! Te ha contactado una nueva empresa');
+                    $message->to('mgutierrez@derch.com.mx', 'Derch')->subject('Hey! Te ha contactado una nueva empresa');
 
                     $message->from('postulaciones.derch@gmail.com', 'Derch');
                 });
@@ -380,7 +380,7 @@ class FrontController extends Controller
             try {
 
                 Mail::send('mail.new_user', $data, function ($message) use ($data) {
-                    $message->to('miriam.derch@gmail.com', 'Derch')->subject('Hey! Se han postulado para buscar una vacante');
+                    $message->to('mgutierrez@derch.com.mx', 'Derch')->subject('Hey! Se han postulado para buscar una vacante');
 
                     $message->from('postulaciones.derch@gmail.com', 'Derch');
                 });
